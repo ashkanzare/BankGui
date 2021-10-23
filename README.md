@@ -12,6 +12,13 @@ PaymentGate is a simple payment gate run by tkinter
 ![App Screenshot](https://s4.uupload.ir/files/screenshot_(126)_h3z.png)
 
 
+## Features
+
+- Generate random numpad every time
+- Generate random captcha 
+- Show bank logo base on first 8 card number digits
+
+  
 ## Run Locally
 
 Clone the project
