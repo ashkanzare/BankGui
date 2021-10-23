@@ -62,6 +62,7 @@ def add_costumer():
     # Commit changes
     conn.commit()
 
+    print('Your account created successfully!')
     # Close connection
     conn.close()
 
@@ -77,8 +78,7 @@ def query():
     # Query the database
     c.execute("SELECT *, oid FROM costumers")
     records = c.fetchall()
-    for i in records:
-        print(i)
+
     # Commit changes
     conn.commit()
 
@@ -124,7 +124,6 @@ def validate_data(data, pay):
     # try: # if get error active this
     c.execute("SELECT *, oid FROM costumers WHERE card_number = " + card_number)
     records = c.fetchall()
-    print(records)
     if records:
         records = records[0]
         records_list = [records[i] for i in range(3, 8)]
